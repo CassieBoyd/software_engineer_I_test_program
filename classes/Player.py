@@ -50,13 +50,17 @@ class Player(Character):
             # Using .split to turn input into a list
             choices = input("Enter your 3 choices separated by spaces: ").split(" ")
 
+            valid_choices = ["s", "d", "m", "h"]
+
             print(choices)
 
             # Validate the choices
             # Check that there are 3 selections by checking the list length. If the length is 3, set choices_are_valid to True. Else, give an error message.
             if len(choices) == 3:
                 choices_are_valid = True
-                print("success")
+                
+                # choices is converted to a set so that .difference can be used to compare valid_choices to choices. The result is passed to list() to list the differences (if any) between the two.
+                print(list(set(choices).difference(valid_choices)))
             else:
                 print("Error! Please enter 3 choices separated by spaces: ")
 
