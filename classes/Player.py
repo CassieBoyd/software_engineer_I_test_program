@@ -47,9 +47,12 @@ class Player(Character):
             # Example 1: s s d
             # Example 2: d h m
             # Example 3: m s d
-            choices = input("Enter your 3 choices separated by spaces: ")
+            choices = input("Enter your 3 choices separated by spaces: ").split(" ")
+
+            print(choices)
 
             # Validate the choices
+
 
         print()
 
