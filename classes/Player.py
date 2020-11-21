@@ -42,16 +42,23 @@ class Player(Character):
         choices_are_valid = False
 
         while not choices_are_valid:
-            choices_are_valid = True
 
             # Example 1: s s d
             # Example 2: d h m
             # Example 3: m s d
+
+            # Using .split to turn input into a list
             choices = input("Enter your 3 choices separated by spaces: ").split(" ")
 
             print(choices)
 
             # Validate the choices
+            # Check that there are 3 selections by checking the list length. If the length is 3, set choices_are_valid to True. Else, give an error message.
+            if len(choices) == 3:
+                choices_are_valid = True
+                print("success")
+            else:
+                print("Error! Please enter 3 choices separated by spaces: ")
 
 
         print()
