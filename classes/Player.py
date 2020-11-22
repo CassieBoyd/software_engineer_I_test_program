@@ -42,14 +42,38 @@ class Player(Character):
         choices_are_valid = False
 
         while not choices_are_valid:
-            choices_are_valid = True
 
             # Example 1: s s d
             # Example 2: d h m
             # Example 3: m s d
-            choices = input("Enter your 3 choices separated by spaces: ")
+
+            # Using .lower() to lowercase user input and .split to turn input into a list
+            choices = input("Enter your 3 choices separated by spaces: ").lower().split(" ")
+
+            valid_choices = ["s", "d", "m", "h"]
+
 
             # Validate the choices
+            # Check that there are 3 selections by checking the list length. 
+            # choices is converted to a set so that .difference can be used to compare valid_choices to choices. The result is passed to list(), which lists the differences (if any) between the two. The length of the resulting list is checked.
+            if len(choices) == 3 and len(list(set(choices).difference(valid_choices))) == 0:
+            # If both conditionals are true, choices_are_valid is set to True and the for loop executes.
+                choices_are_valid = True
+                for stat in choices:
+                    if (stat == "s"):
+                        print("Strength increased!")
+                    elif (stat == "d"):
+                        print("Defense increased!")
+                    elif (stat == "m"):
+                        print("Mana increased!")
+                    elif (stat == "h"):
+                        print("Health increased!")
+                
+
+            # Else, give an error message.
+            else:
+                print("Error! Invalid input!")
+
 
         print()
 
