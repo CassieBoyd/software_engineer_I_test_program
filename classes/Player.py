@@ -62,14 +62,16 @@ class Player(Character):
                 for stat in choices:
                     if (stat == "s"):
                         self.strength += self.AMOUNT_TO_INCREASE_STRENGTH_PER_LEVEL_UP_POINT
-                        # print("Strength increased to " % self.strength)
+                        print(f"Strength increased to {self.strength}!")
                     elif (stat == "d"):
-                        print("Defense increased!")
+                        self.defense += self.AMOUNT_TO_INCREASE_DEFENSE_PER_LEVEL_UP_POINT
+                        print(f"Defense increased to {self.defense}!")
                     elif (stat == "m"):
                         self.max_mana += self.AMOUNT_TO_INCREASE_MAX_MANA_PER_LEVEL_UP_POINT
                         print(f"Max mana increased to {self.max_mana}!")
                     elif (stat == "h"):
-                        print("Health increased!")
+                        self.max_health += self.AMOUNT_TO_INCREASE_MAX_HEALTH_PER_LEVEL_UP_POINT
+                        print(f"Max health increased to {self.max_health}!")
                 
 
             # Else, give an error message.
