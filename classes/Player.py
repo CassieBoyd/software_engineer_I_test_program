@@ -47,20 +47,29 @@ class Player(Character):
             # Example 2: d h m
             # Example 3: m s d
 
-            # Using .split to turn input into a list
-            choices = input("Enter your 3 choices separated by spaces: ").split(" ")
+            # Using .lower() to lowercase user input and .split to turn input into a list
+            choices = input("Enter your 3 choices separated by spaces: ").lower().split(" ")
 
             valid_choices = ["s", "d", "m", "h"]
 
             print(choices)
 
             # Validate the choices
-            # Check that there are 3 selections by checking the list length. If the length is 3, set choices_are_valid to True. Else, give an error message.
-            if len(choices) == 3:
+            # Check that there are 3 selections by checking the list length. If the length is 3 (and second condition is met), set choices_are_valid to True. Else, give an error message.
+            # choices is converted to a set so that .difference can be used to compare valid_choices to choices. The result is passed to list(), to list the differences (if any) between the two. The length of the resulting list is checked.
+            if len(choices) == 3 and len(list(set(choices).difference(valid_choices))) == 0:
                 choices_are_valid = True
+                for stat in choices:
+                    if (stat == "s"):
+                        print("Strength increased!")
+                    elif (stat == "d"):
+                        print("Defense increased!")
+                    elif (stat == "m"):
+                        print("Mana increased!")
+                    elif (stat == "h"):
+                        print("Health increased!")
                 
-                # choices is converted to a set so that .difference can be used to compare valid_choices to choices. The result is passed to list() to list the differences (if any) between the two.
-                print(list(set(choices).difference(valid_choices)))
+
             else:
                 print("Error! Please enter 3 choices separated by spaces: ")
 
