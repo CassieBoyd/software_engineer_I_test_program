@@ -11,9 +11,14 @@ class Enemy(Character):
 
     def get_action(self):
         # Randomly choose between all abilities and a regular attack
+        all_enemy_attacks = self.abilities
+        all_enemy_attacks.append("Regular Attack")
+        enemy_attack = (choice(all_enemy_attacks))
+        return enemy_attack
+        
         # Regular attack should be returned as "Regular Attack"
-        # If you don't have enough mana to use a specific abiilty, the ability should not be selectable
-        pass
+        # If you don't have enough mana to use a specific ability, the ability should not be selectable
+        
 
     def display_enemy_encounter_message(self):
         enemy_encounter_message = choice(Enemy.ENEMY_ENCOUNTER_MESSAGES)

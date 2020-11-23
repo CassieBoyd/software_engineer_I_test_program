@@ -10,3 +10,7 @@ class Ability:
         # The defending_character should reduce their health
         # A message should be displayed for the ability use
         pass
+
+    # To return attack name as a string
+    # def __str__(self):
+    #     return self.name
