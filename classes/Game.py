@@ -4,6 +4,7 @@ from black_magic import get_player_and_enemy_info_box_lines
 from classes.ActionLog import ActionLog
 from classes.Chicken import Chicken
 from classes.Player import Player
+from classes.Rabbit import Rabbit
 
 
 class Game:
@@ -20,7 +21,8 @@ class Game:
 
         # Add additional enemies here
         self.enemies = [
-            Chicken
+            Chicken,
+            Rabbit
         ]
 
         self.current_enemy = None

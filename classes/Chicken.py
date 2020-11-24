@@ -15,5 +15,6 @@ class Chicken(Enemy):
 
         self.abilities += [
             Ability(self.action_log, "Chicken Attack", 10, 3),
-            Ability(self.action_log, "Eat Bug", 0, 1)
+            Ability(self.action_log, "Eat Bug", 0, 1),
+            Ability(self.action_log, "Peck", 5, 2)
         ]

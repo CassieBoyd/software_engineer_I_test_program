@@ -5,8 +5,8 @@ from classes.Enemy import Enemy
 class Rabbit(Enemy):
     # https://www.youtube.com/watch?v=cCI18qAoKq4
     name = "Rabbit"
-    strength = 5
-    defense = 0.1
+    strength = 8
+    defense = 0.15
     max_mana = 20
     max_health = 90
 
@@ -15,5 +15,6 @@ class Rabbit(Enemy):
 
         self.abilities += [
             Ability(self.action_log, "Ravage", 30, 4),
-            Ability(self.action_log, "Nibble Grass", 0, 1)
+            Ability(self.action_log, "Nibble Grass", 0, 1),
+            Ability(self.action_log, "Rabbit Kick", 10, 2)
         ]
