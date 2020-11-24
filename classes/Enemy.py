@@ -6,7 +6,7 @@ from classes.Character import Character
 class Enemy(Character):
     # If you add any new messages here, they need to have n_or_no_n and enemy_name
     ENEMY_ENCOUNTER_MESSAGES = [
-        "You see a{n_or_no_n} {enemy_name}!", "A{n_or_no_n} {enemy_name} has crossed your path!"
+        "You see a{n_or_no_n} {enemy_name}!", "A{n_or_no_n} {enemy_name} has crossed your path!", "A{n_or_no_n} {enemy_name} appeared!"
     ]
 
     def get_action(self):

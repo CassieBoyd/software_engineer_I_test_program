@@ -100,6 +100,6 @@ class Player(Character):
                 self.use_ability(self.abilities[0], enemy)
 
                 # Temporary code until abilities are in place
-                print("You did nothing.")
+                # print("You did nothing.")
             else:
                 is_invalid_input = True
