@@ -36,4 +36,5 @@ class Character:
         print(self.name, "took", damage, "damage!")
 
     def use_ability(self, ability, defending_character):
+        # print("Ability.cast", self)
         ability.cast(self, defending_character)
