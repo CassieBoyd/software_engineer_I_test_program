@@ -95,7 +95,7 @@ class Player(Character):
 
             if action == "r":
                 self.use_regular_attack(enemy)
-            elif action == "s":
+            elif action == "s" and self.current_mana >= self.abilities[0].mana_cost:
                 # IMPLEMENT: If the player doesn't have enough mana, they can't cast the ability
                 self.use_ability(self.abilities[0], enemy)
 
