@@ -16,7 +16,3 @@ class Ability:
         defending_character.current_health -= self.damage
         print(f"{attacking_character.name} used {self.name}!")
         print(f"{defending_character.name} took {self.damage} damage!")
-
-    # To return attack name as a string
-    # def __str__(self):
-    #     return self.name
