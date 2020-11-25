@@ -1,6 +1,7 @@
 from classes.Ability import Ability
 from random import choice
 from classes.Character import Character
+from classes.ActionLog import ActionLog
 
 
 class Enemy(Character):
@@ -21,9 +22,6 @@ class Enemy(Character):
         # choice method returns a randomly selected item
         enemy_attack = choice(all_enemy_attacks)
 
-        # print("Current Mana", self.current_mana)
-        # print("Cost", enemy_attack.mana_cost)
-
         # isinstance checks to see if enemy_attack is an instance of Ability. current_mana is checked to see whether it's greater than or equal to the mana_cost of enemy_attack. 
         # Else, return Regular Attack.
         if isinstance(enemy_attack, Ability) and self.current_mana >= enemy_attack.mana_cost:
@@ -40,6 +38,8 @@ class Enemy(Character):
         if self.name[0].lower() in ["a", "e", "i", "o", "u"]:
             n_or_no_n = "n"
 
+        # Adds action to log.txt file
+        self.action_log.add_to_action_list(enemy_encounter_message.format(n_or_no_n=n_or_no_n, enemy_name=self.name) + "\n")
         print(enemy_encounter_message.format(n_or_no_n=n_or_no_n, enemy_name=self.name))
         print()
 

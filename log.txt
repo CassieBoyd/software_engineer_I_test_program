@@ -1,0 +1,79 @@
+You see a Rabbit!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit used Nibble Grass!
+Raven took 0 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit used Ravage!
+Raven took 30 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit hit Raven.
+Raven took 6 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit hit Raven.
+Raven took 6 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit hit Raven.
+Raven took 6 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit hit Raven.
+Raven took 6 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit used Rabbit Kick!
+Raven took 10 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit hit Raven.
+Raven took 6 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit used Rabbit Kick!
+Raven took 10 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit used Rabbit Kick!
+Raven took 10 damage!
+Raven used Smash!
+Rabbit took 50 damage!
+Rabbit hit Raven.
+Raven took 6 damage!
+You see a Chicken!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken used Eat Bug!
+Raven took 0 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken hit Raven.
+Raven took 4 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken used Eat Bug!
+Raven took 0 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken used Chicken Attack!
+Raven took 10 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken hit Raven.
+Raven took 4 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken hit Raven.
+Raven took 4 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken hit Raven.
+Raven took 4 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken used Chicken Attack!
+Raven took 10 damage!
+You died!

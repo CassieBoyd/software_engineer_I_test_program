@@ -51,6 +51,8 @@ class Game:
             self.display_player_and_enemy_info()
 
         if self.player.current_health <= 0:
+            # Adds action to log.txt file
+            self.action_log.add_to_action_list("You died!" + "\n")
             raise self.PlayerDiedException("You died!")
 
         self.player.level_up()

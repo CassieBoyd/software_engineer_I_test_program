@@ -1,3 +1,5 @@
+from classes.ActionLog import ActionLog
+
 class Ability:
     def __init__(self, action_log, name, damage, mana_cost):
         self.action_log = action_log
@@ -15,8 +17,7 @@ class Ability:
         attacking_character.current_mana -= self.mana_cost
         defending_character.current_health -= self.damage
         print(f"{attacking_character.name} used {self.name}!")
-        print(f"{defending_character.name} took {self.damage} damage!")
+        self.action_log.add_to_action_list(f"{attacking_character.name} used {self.name}!" + "\n")
 
-    # To return attack name as a string
-    # def __str__(self):
-    #     return self.name
+        print(f"{defending_character.name} took {self.damage} damage!")
+        self.action_log.add_to_action_list(f"{defending_character.name} took {self.damage} damage!" + "\n")
