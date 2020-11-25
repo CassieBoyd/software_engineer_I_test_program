@@ -27,6 +27,8 @@ class Character:
 
     def use_regular_attack(self, defending_character):
         damage = self.strength * (1 - self.defense)
+
+        # Adds action to log.txt file
         self.action_log.add_to_action_list(f"{self.name} hit {defending_character.name}." + "\n")
         print(self.name, "hit", defending_character.name + ".")
         defending_character.take_damage(damage)
@@ -34,6 +36,8 @@ class Character:
     def take_damage(self, damage):
         damage = math.floor(damage)
         self.current_health -= damage
+
+        # Adds action to log.txt file
         self.action_log.add_to_action_list(f"{self.name} took {damage} damage!" + "\n")
         print(self.name, "took", damage, "damage!")
 

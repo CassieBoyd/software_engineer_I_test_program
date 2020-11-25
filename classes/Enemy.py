@@ -38,6 +38,7 @@ class Enemy(Character):
         if self.name[0].lower() in ["a", "e", "i", "o", "u"]:
             n_or_no_n = "n"
 
+        # Adds action to log.txt file
         self.action_log.add_to_action_list(enemy_encounter_message.format(n_or_no_n=n_or_no_n, enemy_name=self.name) + "\n")
         print(enemy_encounter_message.format(n_or_no_n=n_or_no_n, enemy_name=self.name))
         print()
