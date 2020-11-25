@@ -1,6 +1,6 @@
 class ActionLog:
     def __init__(self):
-        self.action_list = ["thing1", "thing2"]
+        self.action_list = []
 
     def write_action_log_to_file(self):
         # file_object = open(r"../log.txt","w")
@@ -8,6 +8,6 @@ class ActionLog:
         # file_object.close()
         with open("log.txt",'w') as log:
             log.writelines(self.action_list)
-            
+
     def add_to_action_list(self, action):
         self.action_list.append(action)

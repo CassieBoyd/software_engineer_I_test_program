@@ -1,1 +1,55 @@
-thing1thing2You died!
+A Chicken appeared!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken used Peck!
+Raven took 5 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken used Chicken Attack!
+Raven took 10 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken hit Raven.
+Raven took 4 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken used Chicken Attack!
+Raven took 10 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken hit Raven.
+Raven took 4 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken used Peck!
+Raven took 5 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken hit Raven.
+Raven took 4 damage!
+Raven hit Chicken.
+Chicken took 7 damage!
+Chicken hit Raven.
+Raven took 4 damage!
+A Rabbit has crossed your path!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit used Ravage!
+Raven took 30 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit hit Raven.
+Raven took 6 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit hit Raven.
+Raven took 6 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit used Ravage!
+Raven took 30 damage!
+Raven hit Rabbit.
+Rabbit took 7 damage!
+Rabbit used Ravage!
+Raven took 30 damage!
+You died!
